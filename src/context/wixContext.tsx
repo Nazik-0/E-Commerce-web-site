@@ -34,4 +34,4 @@ export const WixClientContextProvider = ({children,}: {children:ReactNode;}) => 
           {children}
         </WixClientContext.Provider>
       );
-}
+};
