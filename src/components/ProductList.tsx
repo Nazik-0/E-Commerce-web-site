@@ -22,7 +22,7 @@ const PRODUCT_PER_PAGE = 20;
    .limit(limit || PRODUCT_PER_PAGE)
    .find();
    
-   console.log(res.items[0])
+   console.log(res.items[0].price)
 
     return (
         <div className="mt-12 flex gap-x-8 gap-y-16 justify-between flex-wrap"> 

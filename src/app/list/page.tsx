@@ -3,6 +3,7 @@ import ProductList from "@/components/ProductList";
 import Image from "next/image"
 
 const ListPage = () => {
+  
     return (
       <div className='px-4 md:px-8 lg:px-16 xl:32 2xl:px-64 relative'>
        {/* CAMPAIGN */}
@@ -25,9 +26,12 @@ const ListPage = () => {
         <Filter/>
          {/* PRODUCTS */}
          <h1 className="mt-12 text-xl font-semibold">Shoes For You!</h1>
-         <ProductList/>
+         <ProductList
+            categoryId ={process.env.FEATURED_PRODUCTS_CATEGORY_ID!}
+            limit={4}
+          />
       </div>
     );
   };
   
-  export default ListPage;
+  export default ListPage;
